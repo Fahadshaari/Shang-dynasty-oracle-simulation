@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#10100f">
+  <meta name="description" content="玄契，以殷商卜辞之意，体验龟甲灼卜，参六壬、小六壬、梅花易数与四柱。文言断辞与白话释义，仅供文化体验与娱乐。">
+  <title>玄契 · 殷风问卜</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' fill='%23bd3328'/%3E%3Cpath d='M18 7v26m0-18 12 7' stroke='%23fff9ee' stroke-width='3' fill='none'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./turtle.css">
+  <script src="./assets/lunar.js" defer></script>
+  <script src="./engine.js" defer></script>
+  <script src="./app.js" defer></script>
+  <script src="./turtle.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#question">跳至问卜</a>
+<div class="site-shell">
+  <header class="masthead">
+    <a href="#" class="brand" aria-label="玄契首页"><span class="seal" aria-hidden="true">卜</span><span class="brand-name">玄契</span><span class="brand-sub">殷 风 问 卜<br><small>THE ORACLE OF SIGNS</small></span></a>
+    <nav aria-label="主导航"><a class="active" href="#divination">问卜</a><a href="#turtle-divination" class="turtle-nav">龟卜</a><button class="text-button" data-open-methods>起课之法</button><span class="entertainment">文化体验 · 仅供娱乐</span></nav>
+  </header>
+  <main>
+    <section class="ritual-layout" id="divination" aria-label="问卜起课">
+      <div class="artifact-panel">
+        <img class="artifact" src="./assets/ritual-roundeyes.webp" alt="暗处凝视的青铜人面：突出的圆眼、外露的齿列与卷角，朱红侧光下陈列龟甲和青铜鼎" width="1086" height="1448" fetchpriority="high">
+        <div class="artifact-shade"></div>
+        <div class="artifact-top"><span>玄鸟司契 · 观象问时</span><span class="plate-number">VOL. 甲</span></div>
+        <div class="vertical-inscription" aria-hidden="true">有问于心　有象于时</div>
+        <div class="hero-copy"><p class="eyebrow">一 念 起　 万 象 生</p><h1>叩问此刻<span class="red-stop">。</span></h1><p class="hero-sub">以古之象，照今之问。</p></div>
+        <div class="artifact-caption"><span>兽面 · 龟甲 · 青铜</span><span>殷商意象 / 当代拟作</span></div>
+      </div>
+      <div class="question-panel">
+        <div class="panel-heading"><div><p class="eyebrow red">灼 龟 成 契</p><h2>心有所问</h2></div><span class="side-note">一事一占<br>静心而问</span></div>
+        <div class="clock-strip"><span class="clock-label">此刻 · 北京</span><time id="current-time">正在校准时间</time><span id="lunar-time" class="lunar-time"></span></div>
+        <form id="oracle-form">
+          <div class="field question-field"><label for="question">所问何事 <span>01 / 问意</span></label><textarea id="question" name="question" maxlength="300" rows="3" required placeholder="写下此刻牵挂的一件事……"></textarea><div class="question-bottom"><span>问题越具体，释义越贴近你的处境。</span><span id="character-count">0 / 300</span></div></div>
+          <fieldset class="topic-field"><legend>问事类别</legend><div class="topics"><label><input type="radio" name="topic" value="general" checked><span>万事</span></label><label><input type="radio" name="topic" value="study"><span>学业</span></label><label><input type="radio" name="topic" value="career"><span>事业</span></label><label><input type="radio" name="topic" value="love"><span>情感</span></label><label><input type="radio" name="topic" value="travel"><span>出行</span></label></div></fieldset>
+          <div class="birth-heading"><span>生辰与来处</span><span>02 / 年命</span></div>
+          <div class="field-grid"><div class="field"><label for="birth-date">出生日期 <small>公历</small></label><input id="birth-date" type="date" name="birthDate" min="1900-01-01" required></div><div class="field"><label for="birth-time">出生时间 <small>当地时间</small></label><input id="birth-time" type="time" name="birthTime" required><label class="unknown-time"><input id="unknown-time" type="checkbox">时辰不详</label></div></div>
+          <div class="field-grid place-grid"><div class="field"><label for="birth-place">出生地点</label><input id="birth-place" name="birthPlace" type="text" maxlength="100" placeholder="例如：上海、纽约" list="cities" autocomplete="off" required><datalist id="cities"><option value="上海"><option value="北京"><option value="广州"><option value="成都"><option value="香港"><option value="台北"><option value="纽约"><option value="洛杉矶"><option value="伦敦"><option value="斯德哥尔摩"><option value="新加坡"><option value="东京"><option value="悉尼"></datalist></div><div class="field"><label for="birth-zone">出生地时区</label><select id="birth-zone" name="birthZone" required><option value="Asia/Shanghai">中国 · 北京时间</option><option value="Asia/Hong_Kong">香港</option><option value="Asia/Taipei">台北</option><option value="America/New_York">纽约 · 美东</option><option value="America/Chicago">芝加哥 · 美中</option><option value="America/Denver">丹佛 · 美山</option><option value="America/Los_Angeles">洛杉矶 · 美西</option><option value="America/Phoenix">凤凰城</option><option value="America/Toronto">多伦多</option><option value="America/Vancouver">温哥华</option><option value="Europe/London">伦敦</option><option value="Europe/Paris">巴黎</option><option value="Europe/Berlin">柏林</option><option value="Europe/Stockholm">斯德哥尔摩</option><option value="Asia/Singapore">新加坡</option><option value="Asia/Tokyo">东京</option><option value="Asia/Seoul">首尔</option><option value="Asia/Bangkok">曼谷</option><option value="Asia/Kolkata">印度</option><option value="Asia/Dubai">迪拜</option><option value="Australia/Sydney">悉尼</option><option value="Australia/Perth">珀斯</option><option value="Pacific/Auckland">奥克兰</option><option value="Africa/Johannesburg">约翰内斯堡</option><option value="custom">其他时区…</option></select></div></div>
+          <div class="field" id="custom-zone-field" hidden><label for="custom-zone">IANA 时区名称</label><input id="custom-zone" placeholder="例如：Asia/Kathmandu" list="all-zones"><datalist id="all-zones"></datalist></div>
+          <p class="field-help" id="zone-help">出生时间将按所选时区换算为北京时间；请核对出生地时区。</p>
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <button class="cast-button" id="cast-button" type="submit"><span class="button-glyph" aria-hidden="true">卜</span><span>起 课 问 卜</span><span class="button-detail">观象 · 释辞</span></button>
+          <p class="privacy-note">问题与生辰仅在当前浏览器内计算，不上传、不保存。</p>
+        </form>
+      </div>
+    </section>
+    <div class="method-ribbon" aria-label="起课方法"><span class="ribbon-title">四法参看</span><span>六壬 <small>天地四课</small></span><span>小六壬 <small>月日时诀</small></span><span>梅花易数 <small>体用生克</small></span><span>四柱 <small>生辰五行</small></span><button data-open-methods class="text-button">阅其法 <span aria-hidden="true">＋</span></button></div>
+    <section class="result-section" id="result" aria-labelledby="result-heading" hidden tabindex="-1">
+      <div class="result-heading"><div><p class="eyebrow red">契 成 · 观 象</p><h2 id="result-heading">此问有象</h2></div><div class="result-actions"><span id="cast-time"></span><button class="outline-button" id="edit-question">重问一事</button></div></div>
+      <div class="question-recap"><span>所问</span><p id="question-recap"></p></div>
+      <div class="oracle-reading"><div class="reading-index"><span class="small-seal">契辞</span><span>仿卜辞 · 当代拟作</span></div><div class="reading-body"><p class="classical-reading" id="classical-reading"></p><div class="translation"><span>白话释义</span><p id="translation"></p></div><div class="practical"><span>此刻可做</span><p id="practical"></p></div></div></div>
+      <div class="chart-heading"><h3>课象参看</h3><span>有据可循 · 各法独立起算</span></div>
+      <div class="charts-grid"><article class="chart-card"><div class="card-title"><span>壹</span><h3>小六壬</h3><small>以月、日、时起掌诀</small></div><div id="small-chart"></div></article><article class="chart-card"><div class="card-title"><span>贰</span><h3>六壬四课</h3><small>月将加时 · 干支寄宫</small></div><div id="liuren-chart"></div></article><article class="chart-card"><div class="card-title"><span>叁</span><h3>梅花易数</h3><small>年月日时 · 本卦与变卦</small></div><div id="meihua-chart"></div></article></div>
+      <article class="birth-card"><div class="birth-card-title"><p class="eyebrow red">肆 / 生 辰 参 看</p><h3>四柱与五行</h3><p id="birth-caption"></p></div><div id="birth-chart"></div></article>
+      <details class="calculation-details"><summary>展开本次推算依据</summary><div id="calculation-details"></div></details>
+      <p class="result-disclaimer">课象为传统规则的文化演绎，不具有预测未来的科学依据。文言与译文为规则化拟作；请以现实信息与自己的判断为准。</p>
+    </section>
+    <section class="turtle-section" id="turtle-divination" aria-labelledby="turtle-heading">
+      <div class="turtle-heading"><div><p class="eyebrow red">以 火 问 甲 · 以 兆 成 辞</p><h2 id="turtle-heading">龟甲卜问</h2></div><span class="turtle-badge">三法合参 · 以课成兆</span></div>
+      <div class="turtle-workspace">
+        <div class="turtle-stage" id="turtle-stage" aria-label="龟腹甲与本次模拟兆纹">
+          <div class="turtle-stage-meta"><span>龟腹甲 / 灼卜</span><span id="turtle-image-state">甲未灼 · 事未问</span></div>
+          <div class="plastron-frame"><img src="./assets/turtle-plastron.webp" class="plastron" width="1254" height="1254" alt="平展的象牙白色龟腹甲，中央留有灼卜区域" loading="lazy"><svg id="turtle-cracks" viewBox="0 0 1000 1000" role="img" aria-label="尚未生成兆纹"></svg><span class="turtle-ember" aria-hidden="true"></span></div>
+          <p class="turtle-stage-caption" id="turtle-stage-caption">心中所问，书于右侧；执火取兆。</p>
+        </div>
+        <div class="turtle-controls">
+          <ol class="turtle-steps" aria-label="龟卜步骤"><li id="turtle-step-1" aria-current="step"><span>壹</span>刻问</li><li id="turtle-step-2"><span>贰</span>灼甲</li><li id="turtle-step-3"><span>叁</span>观兆</li></ol>
+          <p class="turtle-intro">所念何事，今以甲问。<br><span>小六壬、六壬四课、梅花易数，共参此甲。</span></p>
+          <form id="turtle-form">
+            <div class="field"><div class="turtle-question-label"><label for="turtle-question">命辞 · 所问之事</label><button type="button" id="turtle-use-question" class="text-button">沿用上方问卜</button></div><textarea id="turtle-question" maxlength="300" rows="3" required aria-describedby="turtle-chart-source" placeholder="贞：所谋之事，其可成乎？"></textarea></div>
+            <div class="turtle-prompts" aria-label="试用问辞"><button type="button" data-turtle-prompt="来日应试，其吉乎？">问学业</button><button type="button" data-turtle-prompt="此行可往乎？">问行止</button><button type="button" data-turtle-prompt="所谋之事，其可成乎？">问所谋</button></div>
+            <p class="turtle-method-note" id="turtle-chart-source" aria-live="polite">点击时以当前北京时间起课，与上方共用三法算法。相同课盘得到相同兆纹。</p>
+            <p class="form-error" id="turtle-error" role="alert" hidden></p>
+            <button class="cast-button turtle-cast" id="turtle-cast" type="submit"><span class="button-glyph" aria-hidden="true">卜</span><span id="turtle-button-label">执 火 灼 甲</span><span class="button-detail">取兆 · 成辞</span></button>
+            <p id="turtle-status" class="turtle-status" role="status" aria-live="polite">待问。问题仅在本页处理，不上传、不保存。</p>
+          </form>
+          <div class="turtle-omen-summary" id="turtle-omen-summary" hidden><span>此兆</span><strong id="turtle-omen-name"></strong><p id="turtle-omen-short"></p><button id="turtle-new-question" type="button" class="text-button">另问一事</button></div>
+        </div>
+      </div>
+      <article class="turtle-record" id="turtle-record" aria-labelledby="turtle-record-heading" hidden tabindex="-1">
+        <div class="turtle-record-heading"><div><p class="eyebrow red">契 辞 已 成</p><h3 id="turtle-record-heading">今问刻于甲</h3></div><span id="turtle-cast-time"></span></div>
+        <dl class="turtle-inscription"><div><dt>前辞 <small>何日而卜</small></dt><dd id="turtle-preface"></dd></div><div><dt>命辞 <small>所问何事</small></dt><dd id="turtle-charge"></dd></div><div class="turtle-pronouncement"><dt>占辞 <small>仿古拟作</small></dt><dd id="turtle-judgment"></dd></div><div class="turtle-verification"><dt>验辞 <small>事后所记</small></dt><dd>未验。俟事后书之。<span>事情尚未发生，不预写应验。</span></dd></div></dl>
+        <div class="turtle-translation"><span>白话释义</span><p id="turtle-translation"></p></div>
+        <section class="turtle-basis" aria-labelledby="turtle-basis-heading">
+          <div class="turtle-basis-heading"><h4 id="turtle-basis-heading">判兆有据</h4><span id="turtle-chart-kind"></span></div>
+          <div class="turtle-basis-grid" id="turtle-basis-grid"></div>
+          <p class="turtle-consensus" id="turtle-consensus"></p>
+          <p class="turtle-diagram-key" id="turtle-diagram-key"></p>
+          <p class="turtle-basis-note">兆纹为本站将三法课象转成龟甲意象的固定规则；属现代合参演绎。</p>
+        </section>
+      </article>
+      <details class="turtle-about"><summary>龟卜何以成兆？查看三法与兆纹的对应规则</summary><div>
+        <p>古人以龟腹甲或兽骨受热后的裂纹为兆，再作占断，相关内容可刻记在甲骨上。本板块借其意象，以后世术数课盘决定所见兆纹：先起课，再显兆、成辞。</p>
+        <p>若本问与上方已经起课的问题一致，沿用该次课盘及北京时间；否则点击时以当前北京时间起课，不必填写生辰。两处共用小六壬、六壬四课、梅花易数的计算。问题文字不改变时间课盘。课盘相同，兆类、裂纹及动爻标记相同；重新起课跨越时辰、日期或中气界限时，相关课象才可能改变。</p>
+        <div class="turtle-rule-table"><table><caption>本站固定合参映射（现代拟定）</caption><thead><tr><th scope="col">所参之法</th><th scope="col">舒向</th><th scope="col">敛向</th><th scope="col">未定</th></tr></thead><tbody><tr><th scope="row">小六壬</th><td>大安、速喜、小吉</td><td>留连、赤口</td><td>空亡</td></tr><tr><th scope="row">六壬每课</th><td>比和、上生下</td><td>上克下、下生上</td><td>下克上</td></tr><tr><th scope="row">梅花体用</th><td>比和、用生体</td><td>用克体、体生用</td><td>体克用</td></tr></tbody></table></div>
+        <p>六壬四课先分别取向，再比较舒、敛课数，多者定向，相等则未定。三法合参时，至少两法舒向且无敛向，成“舒兆 · 可试”；至少两法敛向且无舒向，成“敛兆 · 宜守”；其余成“交兆 · 未明”。这里将“下克上、体克用”视为尚须主动用力，暂归未定；不是对古法吉凶的统一定论。</p>
+        <p>兆类决定主纹形态。旁支以固定模板为基准：四课中每一舒向横向展开 5%，每一敛向收缩 5%；主纹六节自下而上，红圈位置对应梅花动爻。全程没有随机抽取。六壬仅使用天地盘与四课，未含三传、天将；这套龟兆映射是本站的现代合参演绎，不是复原的殷商断兆规则，也不是受热物理仿真。</p>
+        <p>前辞、命辞、占辞、验辞只是本页借用的记述框架。问辞沿用你的原话，其余文言为现代拟作；验辞属于事后记录，所以这里保留“未验”。不需要使用真实龟甲或火焰。</p>
+        <div class="source-links"><a href="https://www.penn.museum/sites/expedition/the-case-of-the-wayward-oracle-bone/" target="_blank" rel="noopener noreferrer">宾夕法尼亚大学博物馆 · 甲骨与灼卜</a><a href="https://www.chnmus.net/ch/collection/appraise/details.html?id=512158170971602816" target="_blank" rel="noopener noreferrer">河南博物院 · 甲骨卜兆</a></div>
+      </div></details>
+    </section>
+  </main>
+  <footer><div class="footer-brand">玄契 <span>心有所问，行有所持。</span></div><p>殷商龟卜意象，后世术数参看。<br>仅供娱乐与自我观照。</p><button class="text-button" data-open-methods>关于此契</button></footer>
+</div>
+<dialog id="methods-dialog" aria-labelledby="methods-title"><div class="dialog-header"><p class="eyebrow red">法 有 所 本 · 辞 为 今 作</p><button id="close-methods" class="close-button" aria-label="关闭">×</button></div><h2 id="methods-title">起课之法</h2><p>玄契借用殷商龟甲、卜辞与青铜兽面的视觉意象，结合后世形成的术数。页面文言是当代拟作，不是出土甲骨文或古籍原文。</p><dl><dt>六壬 · 天地盘与四课</dt><dd>按北京时间的日干支、占时与中气月将，排月将加时、十干寄宫及四课，展示上下生克。本版为六壬基础课盘，未排三传、十二天将及九宗门，不称完整大六壬断课。</dd><dt>小六壬 · 月日时掌诀</dt><dd>采用“大安起正月、月上起日、日上起时”的常见顺数法，以北京时间农历月、日及十二时辰循环六宫。闰月按本月数，日历在午夜换日。</dd><dt>梅花易数 · 时间起卦</dt><dd>以农历年支数、月数、日数之和取上卦，加时支数取下卦及动爻。依先天八卦数序，动爻所在卦为用，另一卦为体，展示本卦、变卦与体用五行。</dd><dt>龟甲 · 以课成兆</dt><dd>龟甲与上方共用时间课盘。同问可沿用已起课时刻；小六壬落宫、六壬四课及梅花体用按公开的固定规则合成舒兆、敛兆或交兆，动爻对应主纹标记。此为现代合参可视化，不是殷商史法复原；详细映射见龟卜板块。</dd><dt>四柱 · 生辰参看</dt><dd>将出生地的当地民用时间按 IANA 时区规则（包括夏令时）换算到北京时间。年柱以立春、月柱以节气划分，日柱以午夜换日；不作经度或真太阳时校正。时辰不详时不排日柱与时柱，仅参考不受当日时刻影响的年、月柱。</dd><dt>合参 · 规则化解读</dt><dd>小六壬给出主要意象，六壬四课与梅花体用补充行动节奏，四柱五行提供出生参照。相同输入与起课时刻得到相同结果。问题及类别用于选择对应释义，不改变历法计算；本版无模型实时解读。</dd></dl><p class="sources-title">规则与历法参考</p><div class="source-links"><a href="https://zh.wikisource.org/wiki/六壬大全_(四庫全書本)/卷01" target="_blank" rel="noopener noreferrer">《六壬大全》卷一</a><a href="https://ctext.org/wiki.pl?chapter=867487&amp;if=gb" target="_blank" rel="noopener noreferrer">《梅花易数》卷一</a><a href="https://github.com/6tail/lunar-javascript" target="_blank" rel="noopener noreferrer">lunar-javascript · 历法</a></div><p class="dialog-note">本工具没有预测效力，不用于医疗、投资或其他重大决定。图像为原创艺术想象，不对应特定出土文物。</p></dialog>
+<noscript><p class="no-script">请开启 JavaScript 以使用北京时间换算与起课功能。</p></noscript>
+</body>
+</html>

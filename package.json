@@ -1,0 +1,17 @@
+{
+  "name": "xuanqi-oracle",
+  "version": "1.0.0",
+  "private": true,
+  "description": "玄契：殷商意象的传统术数娱乐网站，含确定性计算与龟甲可视化",
+  "license": "UNLICENSED",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/validate.mjs",
+    "test": "node --test tests/*.test.cjs",
+    "sample": "node examples/calculate.cjs",
+    "series": "node examples/export-series.cjs"
+  }
+}

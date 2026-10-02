@@ -1,0 +1,383 @@
+{
+  "input": {
+    "question": "所谋之事，其可成乎？",
+    "topic": "general",
+    "birthDate": "2000-01-01",
+    "birthTime": "12:30",
+    "birthPlace": "上海",
+    "birthZone": "Asia/Shanghai",
+    "unknownTime": false
+  },
+  "main": {
+    "timestamp": "2026-10-01T15:47:50.000Z",
+    "beijing": "2026-10-01 23:47:50",
+    "lunar": "二〇二六年八月廿一",
+    "month": 8,
+    "day": 21,
+    "yearNumber": 7,
+    "hourNumber": 1,
+    "hour": "子",
+    "leap": false,
+    "small": {
+      "monthIndex": 1,
+      "dayIndex": 3,
+      "index": 3,
+      "name": "赤口",
+      "monthPalace": "留连",
+      "dayPalace": "赤口"
+    },
+    "six": {
+      "day": "戊申",
+      "stem": 4,
+      "branch": 8,
+      "host": "巳",
+      "general": "辰",
+      "generalName": "天罡",
+      "qi": "秋分",
+      "qiDate": "2026-09-23 08:05:14",
+      "hour": "子",
+      "shift": 4,
+      "heaven": [
+        "辰",
+        "巳",
+        "午",
+        "未",
+        "申",
+        "酉",
+        "戌",
+        "亥",
+        "子",
+        "丑",
+        "寅",
+        "卯"
+      ],
+      "lessons": [
+        {
+          "lower": "戊",
+          "upper": "酉",
+          "relation": "outflow",
+          "lowerElement": "土",
+          "upperElement": "金"
+        },
+        {
+          "lower": "酉",
+          "upper": "丑",
+          "relation": "supported",
+          "lowerElement": "金",
+          "upperElement": "土"
+        },
+        {
+          "lower": "申",
+          "upper": "子",
+          "relation": "outflow",
+          "lowerElement": "金",
+          "upperElement": "水"
+        },
+        {
+          "lower": "子",
+          "upper": "辰",
+          "relation": "pressure",
+          "lowerElement": "水",
+          "upperElement": "土"
+        }
+      ],
+      "relation": "outflow"
+    },
+    "meihua": {
+      "subtotal": 36,
+      "total": 37,
+      "moving": 1,
+      "original": {
+        "upper": 4,
+        "lower": 5,
+        "name": "恒",
+        "longName": "雷风恒",
+        "bits": [
+          0,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "changed": {
+        "upper": 4,
+        "lower": 1,
+        "name": "大壮",
+        "longName": "雷天大壮",
+        "bits": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0
+        ]
+      },
+      "body": {
+        "name": "震",
+        "nature": "雷",
+        "element": "木",
+        "bits": [
+          1,
+          0,
+          0
+        ]
+      },
+      "use": {
+        "name": "巽",
+        "nature": "风",
+        "element": "木",
+        "bits": [
+          0,
+          1,
+          1
+        ]
+      },
+      "relation": "same"
+    },
+    "birth": {
+      "pillars": [
+        {
+          "label": "年柱",
+          "value": "己卯",
+          "elements": "土木",
+          "nayin": "城头土"
+        },
+        {
+          "label": "月柱",
+          "value": "丙子",
+          "elements": "火水",
+          "nayin": "涧下水"
+        },
+        {
+          "label": "日柱",
+          "value": "戊午",
+          "elements": "土火",
+          "nayin": "天上火"
+        },
+        {
+          "label": "时柱",
+          "value": "戊午",
+          "elements": "土火",
+          "nayin": "天上火"
+        }
+      ],
+      "dayElement": "土",
+      "dayStem": "戊",
+      "instant": "2000-01-01T04:30:00.000Z",
+      "beijing": "2000-01-01 12:30:00",
+      "ambiguous": false,
+      "unknownTime": false
+    },
+    "reading": {
+      "classical": "维戊申日，子时，贞问所念。象得赤口，言多易歧。敛锋明辨，和而不随。体用相和，循序可为。吉凶非命，进止在人。",
+      "translation": "赤口在传统中关联言语与分歧，可作为提醒：说清事实和边界，避免把猜测当成结论。六壬第一课下生上，可留意自己的付出与消耗。梅花卦体用比和，意象上强调配合与连续性。出生四柱的日主为戊土，此处只借其五行意象作自我观照，不推定性格或命运。",
+      "practical": "把事实、猜测和情绪分开写下，下一次表达只先谈事实。如土承物，把计划落成一件具体、可完成的事。",
+      "topic": "general",
+      "rhythm": "慎言明辨",
+      "meiName": "体用比和",
+      "meiText": "梅花卦体用比和，意象上强调配合与连续性。"
+    }
+  },
+  "turtle": {
+    "question": "所谋之事，其可成乎？",
+    "beijing": "2026-10-01 23:47:50",
+    "timestamp": "2026-10-01T15:47:50.000Z",
+    "day": "戊申",
+    "hour": "子",
+    "source": "main",
+    "chart": {
+      "timestamp": "2026-10-01T15:47:50.000Z",
+      "beijing": "2026-10-01 23:47:50",
+      "lunar": "二〇二六年八月廿一",
+      "month": 8,
+      "day": 21,
+      "yearNumber": 7,
+      "hourNumber": 1,
+      "hour": "子",
+      "leap": false,
+      "small": {
+        "monthIndex": 1,
+        "dayIndex": 3,
+        "index": 3,
+        "name": "赤口",
+        "monthPalace": "留连",
+        "dayPalace": "赤口"
+      },
+      "six": {
+        "day": "戊申",
+        "stem": 4,
+        "branch": 8,
+        "host": "巳",
+        "general": "辰",
+        "generalName": "天罡",
+        "qi": "秋分",
+        "qiDate": "2026-09-23 08:05:14",
+        "hour": "子",
+        "shift": 4,
+        "heaven": [
+          "辰",
+          "巳",
+          "午",
+          "未",
+          "申",
+          "酉",
+          "戌",
+          "亥",
+          "子",
+          "丑",
+          "寅",
+          "卯"
+        ],
+        "lessons": [
+          {
+            "lower": "戊",
+            "upper": "酉",
+            "relation": "outflow",
+            "lowerElement": "土",
+            "upperElement": "金"
+          },
+          {
+            "lower": "酉",
+            "upper": "丑",
+            "relation": "supported",
+            "lowerElement": "金",
+            "upperElement": "土"
+          },
+          {
+            "lower": "申",
+            "upper": "子",
+            "relation": "outflow",
+            "lowerElement": "金",
+            "upperElement": "水"
+          },
+          {
+            "lower": "子",
+            "upper": "辰",
+            "relation": "pressure",
+            "lowerElement": "水",
+            "upperElement": "土"
+          }
+        ],
+        "relation": "outflow"
+      },
+      "meihua": {
+        "subtotal": 36,
+        "total": 37,
+        "moving": 1,
+        "original": {
+          "upper": 4,
+          "lower": 5,
+          "name": "恒",
+          "longName": "雷风恒",
+          "bits": [
+            0,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        "changed": {
+          "upper": 4,
+          "lower": 1,
+          "name": "大壮",
+          "longName": "雷天大壮",
+          "bits": [
+            1,
+            1,
+            1,
+            1,
+            0,
+            0
+          ]
+        },
+        "body": {
+          "name": "震",
+          "nature": "雷",
+          "element": "木",
+          "bits": [
+            1,
+            0,
+            0
+          ]
+        },
+        "use": {
+          "name": "巽",
+          "nature": "风",
+          "element": "木",
+          "bits": [
+            0,
+            1,
+            1
+          ]
+        },
+        "relation": "same"
+      }
+    },
+    "agreement": {
+      "small": -1,
+      "six": -1,
+      "mei": 1,
+      "balance": -2,
+      "lessonCounts": {
+        "open": 1,
+        "closed": 3,
+        "neutral": 0
+      },
+      "open": 1,
+      "closed": 2,
+      "neutral": 0,
+      "omenIndex": 2,
+      "reason": "三法取向相左，故合为交兆，保留分歧。"
+    },
+    "basis": [
+      {
+        "method": "小六壬",
+        "value": "赤口",
+        "direction": -1,
+        "detail": "农历8月21日 · 子时；留连 → 赤口 → 赤口。",
+        "directionText": "敛向"
+      },
+      {
+        "method": "六壬四课",
+        "value": "辰将加子时",
+        "direction": -1,
+        "detail": "一课 酉/戊 下生上；二课 丑/酉 上生下；三课 子/申 下生上；四课 辰/子 上克下。舒向1课、敛向3课、未定0课，以多者定向。",
+        "directionText": "敛向"
+      },
+      {
+        "method": "梅花易数",
+        "value": "雷风恒 → 雷天大壮",
+        "direction": 1,
+        "detail": "初爻动 · 体震木 / 用巽木 · 体用比和。",
+        "directionText": "舒向"
+      }
+    ],
+    "omenIndex": 2,
+    "name": "交兆",
+    "verdict": "未明",
+    "shape": "主纹曲折 · 旁支交错",
+    "paths": [
+      "M500 580 L482 539 L504 497 L491 456 L519 411 L507 369 L537 331",
+      "M482 539 L443.3 515 L418.1 473 L395.6 458",
+      "M504 497 L540.9 478 L567.9 487 L609.3 460",
+      "M491 456 L464 436 L441.5 453 L421.7 428",
+      "M519 411 L550.5 393 L573 363"
+    ],
+    "marker": {
+      "x": 491,
+      "y": 559.5,
+      "line": 1
+    },
+    "spread": 0.9,
+    "preface": "戊申卜，于子时。",
+    "charge": "贞：所谋之事，其可成乎？",
+    "judgment": "小壬得赤口，四课克泄为多。卦得恒，初爻动，之大壮。兆交。占曰：未明。两端未定，毋以意决；审其虚实，俟证而行。",
+    "translation": "小六壬落赤口，取敛向；六壬四课合取敛向；梅花体用比和，取舒向。三法取向相左，故合为交兆，保留分歧。这次模拟呈现交错的兆纹，本站将它拟作“未明”。这不代表坏事将发生，只适合提醒自己：分清事实和猜测，找出还缺少哪条信息。",
+    "verification": "未验。俟事后书之。"
+  }
+}

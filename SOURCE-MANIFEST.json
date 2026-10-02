@@ -1,0 +1,129 @@
+{
+  "project": "xuanqi-oracle",
+  "export_date": "2026-10-02",
+  "source_version": 4,
+  "source_commit": "048bbbf6639a2bc6177fcc4f74af9bc98d63546a",
+  "notes": "Algorithm, UI logic, CSS, calendar and artwork are unchanged; index asset references use relative paths. Original hosting identifiers and credentials are not part of this portable project.",
+  "files": {
+    ".gitattributes": {
+      "bytes": 151,
+      "sha256": "3ef9cf82503e4d296b44cfa7518d0b8bf12f0202cf570cddb63c8395d77087a9"
+    },
+    ".github/workflows/pages.yml": {
+      "bytes": 975,
+      "sha256": "81228655231c6637d6573048e29d4d2aa87be9735d5292697ff04216a0565ecd"
+    },
+    ".gitignore": {
+      "bytes": 126,
+      "sha256": "e1d01cf30c02924fc4ef4dab0205b15ff82aed1d16142c4e965f2a666f35b960"
+    },
+    "README.md": {
+      "bytes": 5274,
+      "sha256": "2fded94b911784f2aa165269c530335183f937096c3c8ed0458c89b028b4b243"
+    },
+    "THIRD_PARTY_NOTICES.md": {
+      "bytes": 1064,
+      "sha256": "da8695fe988c48de8c6e8cdcd0161eac55742990b1e8f4c934cc6d6a49d7ab5a"
+    },
+    "dist/.nojekyll": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "dist/app.js": {
+      "bytes": 13590,
+      "sha256": "8f682866b90c862363ddfae4d22c9f4007515fa03358043eb950b52862f630b4"
+    },
+    "dist/assets/lunar-LICENSE.txt": {
+      "bytes": 1061,
+      "sha256": "d9210caf1844dcf410095cea464b79800aad30dbd49df092076b9f0ddc015404"
+    },
+    "dist/assets/lunar.js": {
+      "bytes": 435942,
+      "sha256": "9750324bfe1aa63c146f8c72b1143df924466c11c8a5277d7d9225c541a18aaa"
+    },
+    "dist/assets/ritual-roundeyes.webp": {
+      "bytes": 283516,
+      "sha256": "a33c97915d7d768e7ab9190752c619d8330081d9d07942d6c0193fe1c4e66b3d"
+    },
+    "dist/assets/turtle-plastron.webp": {
+      "bytes": 213974,
+      "sha256": "659790f0ac62f883bb927644baf77e1c97aba0bd8417d3cde23c8bc2c2702bbe"
+    },
+    "dist/engine.js": {
+      "bytes": 16902,
+      "sha256": "b5dd139463b7b0b64229b982d3deeb7b6ecd5de33cf90d9018d7cd814a1f563a"
+    },
+    "dist/index.html": {
+      "bytes": 20506,
+      "sha256": "8471202d504bc8bcc49b072ec8ad9b55a2807faf8219bb8f193e4d3916579aa5"
+    },
+    "dist/style.css": {
+      "bytes": 19297,
+      "sha256": "1513b2ee68ef77a8ae001f08f83ea3d29c081a78192b1593907b9cc8ed8b7842"
+    },
+    "dist/turtle.css": {
+      "bytes": 10601,
+      "sha256": "eb09cb8588448de1c9deb64bf8ddd9dfcdb37db9f547e80abc155f7b958f903a"
+    },
+    "dist/turtle.js": {
+      "bytes": 15483,
+      "sha256": "c92ceded79deeef8b9244e1519a3e4ed42fc76caed1200a08753d918e9af8236"
+    },
+    "docs/ALGORITHMS.md": {
+      "bytes": 9459,
+      "sha256": "a34f80836dbc8596a605f518b7587b78c3e6b0c4e3fa462a52894950c0d7867b"
+    },
+    "docs/API.md": {
+      "bytes": 4853,
+      "sha256": "b83f522bb22494194612ad55f9458c40a4c4dfa00444c9e692cb24aa2dd63c5a"
+    },
+    "docs/DEPLOYMENT.md": {
+      "bytes": 4012,
+      "sha256": "dbde9fb34c18d24fa27746e7e5a56850d848ae9ff9d61d0234db9f7d37ed2e45"
+    },
+    "docs/PROJECT-NOTES.md": {
+      "bytes": 3820,
+      "sha256": "2f50023a017a47f198ad35a31d79e84ab038004dae6a917d45b75dc900f3066d"
+    },
+    "docs/VISUALIZATION.md": {
+      "bytes": 5029,
+      "sha256": "ce2b4b2478d5dd90c3e9fb79daa5c7595efd231200c04c56a9587cf0d52b0eeb"
+    },
+    "examples/calculate.cjs": {
+      "bytes": 768,
+      "sha256": "f5ed0a644c3d6f66227d8f57267b15cce6af77e61fa9600f71bfb8ed713cdce9"
+    },
+    "examples/export-series.cjs": {
+      "bytes": 1029,
+      "sha256": "d513e82a2e152200025084fe8b7c0c54966774bcf7ac3850b608bb8400be5ef6"
+    },
+    "examples/quantify.cjs": {
+      "bytes": 1030,
+      "sha256": "e59eb7bea8d446f7427f80beba75ada68d773aba0ac4825c5c62c69243051f1b"
+    },
+    "examples/sample-result.json": {
+      "bytes": 9783,
+      "sha256": "9091893f01d192f29d39a49ea92b2bb1ba03dd8bafcb721727b337e2d6d006f7"
+    },
+    "examples/sample-series.csv": {
+      "bytes": 4225,
+      "sha256": "b13f7327bb704a3d8ac9f6d56b82a894a7345949794ea68c3a4e68376c3f9c28"
+    },
+    "package.json": {
+      "bytes": 483,
+      "sha256": "fb4fcd4e23adf8240885906d718e9e5752e71f241c36257c3e92aaf783825543"
+    },
+    "scripts/serve.mjs": {
+      "bytes": 1710,
+      "sha256": "dd10235e7d9411695c4d531c6bca0b5a272363aa30e14fad322d4177bc1c64c9"
+    },
+    "scripts/validate.mjs": {
+      "bytes": 1646,
+      "sha256": "c327a123fdb6634521d47602268b9d01e7d887b0a75f08d353f8435a07cba927"
+    },
+    "tests/oracle.test.cjs": {
+      "bytes": 5849,
+      "sha256": "e92a1947fdf3559d7c9fc99f403597fe33ef87106a8c34ab8c7267dc8d3e10eb"
+    }
+  }
+}
